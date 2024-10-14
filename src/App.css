@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 #root {
   margin: 0 auto;
@@ -13,6 +14,15 @@
   font-style: normal;
 }
 
+
+.noto-sans {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
 
 .logo {
   height: 6em;
@@ -33,7 +43,6 @@
   width: 1200px;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
@@ -53,20 +62,29 @@
 
 .card-container {
   border-radius: 8px;
-  padding: 10px;
-  padding-bottom: 50px;
-  /* gap: 30px; */
+  padding: 20px;
   flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.253);
+<<<<<<< Updated upstream
   width: 320px;
   height: 530px;
+=======
+  width: 300px;
+  height: 500px;
+>>>>>>> Stashed changes
   margin: 5px;
 }
 
 .card-container p {
   color: rgb(255, 255, 255);
   font-size: 0.9rem;
+<<<<<<< Updated upstream
   max-height: 250px;
+=======
+  max-height: 150px;
+  font-family: "Noto Sans", sans-serif;
+  text-align: start;
+>>>>>>> Stashed changes
 }
 
 .selected-card-container {

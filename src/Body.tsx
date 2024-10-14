@@ -16,7 +16,7 @@ const figures: Figure[] = [
 	{
 		id: 1,
 		name: "Zombie",
-		mood: "J'ai pas compris le cours de la veille",
+		mood: "Pas compris le cours de la veille",
 		image: "src/images/zombie.png",
 		description:
 			"Le/la zombie arrive en traînant les pieds, l'air aussi vide que sa tête ! Iel a passé la nuit à essayer de comprendre le cours de la veille, mais sa tête semble aussi vide que la gamelle de Lily.",
@@ -63,7 +63,7 @@ const figures: Figure[] = [
 		mood: "Malade",
 		image: "src/images/frankenstein.png",
 		description:
-			"Frankenstein traîne les pieds, le teint vert et les électrodes encore fumantes. Ce matin, il se sent comme un assemblage de pièces de rechange — pas tout à fait à 100%. Il espère juste que la machine à café ne le lâche pas, sinon c'est la panique !",
+			"Frankenstein traîne les pieds, le teint vert et les électrodes encore fumantes. Ce matin, il se sent comme un assemblage de pièces de rechange — pas tout à fait à 100%.",
 		chosenMood:
 			"Prends soin de toi, même les monstres ont besoin de repos ! Évite de te surcharger, ou tu pourrais devenir… un vrai tas de pièces !",
 		isOkay: false,
@@ -74,7 +74,7 @@ const figures: Figure[] = [
 		mood: "Fatigué·e",
 		image: "src/images/fantome.png",
 		description:
-			"Le fantôme flotte dans la pièce, à moitié transparent et totalement épuisé. Il a passé la nuit à hanter des rêves qui lui ont volé toute son énergie. Sa seule ambition aujourd'hui ? Échapper à la lumière du jour et trouver un bon vieux drap pour s'enrouler et faire une sieste !",
+			"Le fantôme flotte dans la pièce, à moitié transparent et totalement épuisé. Sa seule ambition aujourd'hui ? Trouver un bon vieux drap pour s'enrouler et faire une sieste !",
 		chosenMood:
 			"Un petit conseil : même les fantômes ont besoin d'une bonne nuit de sommeil ! Ne te laisse pas hanter par le stress, relaxe-toi un peu !",
 		isOkay: false,

@@ -21,8 +21,8 @@ export default function Card({ figure, onClick }: CardProps) {
 		<div className="card-container" onClick={onClick} onKeyDown={handleKeyDown}>
 			<img src={figure.image} alt={figure.name} />
 			<h2>{figure.name}</h2>
-			<p>Mood: {figure.mood}</p>
-			<p>Description: {figure.description}</p>
+			<h3>{figure.mood}</h3>
+			<p>{figure.description}</p>
 		</div>
 	);
 }
