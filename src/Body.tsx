@@ -19,7 +19,7 @@ const figures: Figure[] = [
 		mood: "J'ai pas compris le cours de la veille",
 		image: "src/images/zombie.png",
 		description:
-			"Le/la zombie arrive en traînant les pieds, l'air aussi vide que sa tête ! Iel a passé la nuit à essayer de comprendre le cours de la veille, mais sa tête semble aussi vide que la gamelle de Lily. Tout ce qu'iel veut, c'est une carte de révision pour sortir de cette apocalypse d'incompréhension !",
+			"Le/la zombie arrive en traînant les pieds, l'air aussi vide que sa tête ! Iel a passé la nuit à essayer de comprendre le cours de la veille, mais sa tête semble aussi vide que la gamelle de Lily.",
 		chosenMood:
 			"Rappelle-toi, un bon zombie ne panique jamais ! Prends une pause et n'oublie pas de réviser avec un bon vieux cerveau !",
 		isOkay: false,
@@ -30,7 +30,7 @@ const figures: Figure[] = [
 		mood: "Au top",
 		image: "src/images/vampire.png",
 		description:
-			"Le/la vampire est prêt·e à mordre la journée ! Avec un sourire éclatant (pour un·e vampire, c'est relatif), iel a fait le plein d'énergie en se nourrissant des bonnes vibes de la nuit. Rien ne peut l'arrêter, sauf peut-être une gousse d'ail ou un reflet dans un miroir !",
+			"Le/la vampire est prêt·e à mordre la journée ! Avec un sourire éclatant (pour un·e vampire, c'est relatif), iel a fait le plein d'énergie en se nourrissant des bonnes vibes de la nuit.",
 		chosenMood:
 			"Attention quand même à ne pas mordre tes camarades ! Le café est ton meilleur allié pour garder l'énergie sans les crocs !",
 		isOkay: true,
@@ -41,7 +41,7 @@ const figures: Figure[] = [
 		mood: "Motivé·e",
 		image: "src/images/sorciere.png",
 		description:
-			"La sorcière entre dans la pièce avec son balai et un éclat dans les yeux ! Elle a concocté une potion magique de motivation qui lui permet d'affronter le jour avec détermination. Attention à ses incantations, car elle pourrait transformer n'importe quel projet en un chef-d'œuvre ensorcelé !",
+			"La sorcière entre dans la pièce avec son balai et un éclat dans les yeux ! Elle a concocté une potion magique de motivation qui lui permet d'affronter le jour avec détermination.",
 		chosenMood:
 			"Fais attention avec tes sorts, parfois la motivation peut se transformer en surcharge de travail ! Pense à prendre des pauses magiques !",
 		isOkay: true,

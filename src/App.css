@@ -1,8 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
 #root {
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
 }
+
+.nosifer-regular {
+  font-family: "Nosifer", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
 .logo {
   height: 6em;
   padding: 1.5em;
@@ -45,17 +55,18 @@
   border-radius: 8px;
   padding: 10px;
   padding-bottom: 50px;
-  gap: 30px;
+  /* gap: 30px; */
   flex-wrap: wrap;
   background-color: rgba(255, 255, 255, 0.253);
   width: 300px;
-  height: 500px;
+  /* height: 500px; */
   margin: 5px;
 }
 
 .card-container p {
   color: rgb(255, 255, 255);
-  font-size: 0.8rem;
+  font-size: 1rem;
+  max-height: 150px;
 }
 
 .selected-card-container {
