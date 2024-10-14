@@ -95,7 +95,7 @@ const Body = () => {
 					<Card figure={selectedFigure} />
 					<p>{selectedFigure.chosenMood}</p>
 					<button type="button" onClick={() => setSelectedFigure(null)}>
-						Merci, je m'accroche
+						{selectedFigure?.isOkay ? "Okay, je gère" : "Merci, je m'accroche"}
 					</button>
 				</div>
 			) : (
