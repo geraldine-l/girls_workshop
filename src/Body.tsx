@@ -22,8 +22,8 @@ const figures: Figure[] = [
 			"Le/la zombie arrive en traînant les pieds, l'air aussi vide que sa tête ! Iel a passé la nuit à essayer de comprendre le cours de la veille, mais sa tête semble aussi vide que la gamelle de Lily. Tout ce qu'iel veut, c'est une carte de révision pour sortir de cette apocalypse d'incompréhension !",
 		chosenMood:
 			"Rappelle-toi, un bon zombie ne panique jamais ! Prends une pause et n'oublie pas de réviser avec un bon vieux cerveau !",
-			isOkay: false,
-		},
+		isOkay: false,
+	},
 	{
 		id: 2,
 		name: "Vampire",
@@ -34,7 +34,7 @@ const figures: Figure[] = [
 		chosenMood:
 			"Attention quand même à ne pas mordre tes camarades ! Le café est ton meilleur allié pour garder l'énergie sans les crocs !",
 		isOkay: true,
-		},
+	},
 	{
 		id: 3,
 		name: "Sorcière",
@@ -45,8 +45,7 @@ const figures: Figure[] = [
 		chosenMood:
 			"Fais attention avec tes sorts, parfois la motivation peut se transformer en surcharge de travail ! Pense à prendre des pauses magiques !",
 		isOkay: true,
-	
-		},
+	},
 	{
 		id: 4,
 		name: "Loup-garou",
@@ -57,7 +56,7 @@ const figures: Figure[] = [
 		chosenMood:
 			"Super, mais n'oublie pas de partager les idées, pas seulement les miettes ! Et évite de hurler si ça ne va pas !",
 		isOkay: true,
-		},
+	},
 	{
 		id: 5,
 		name: "Frankenstein",
@@ -68,7 +67,7 @@ const figures: Figure[] = [
 		chosenMood:
 			"Prends soin de toi, même les monstres ont besoin de repos ! Évite de te surcharger, ou tu pourrais devenir… un vrai tas de pièces !",
 		isOkay: false,
-		},
+	},
 	{
 		id: 6,
 		name: "Fantôme",
@@ -79,7 +78,7 @@ const figures: Figure[] = [
 		chosenMood:
 			"Un petit conseil : même les fantômes ont besoin d'une bonne nuit de sommeil ! Ne te laisse pas hanter par le stress, relaxe-toi un peu !",
 		isOkay: false,
-		},
+	},
 ];
 
 const Body = () => {
@@ -89,24 +88,25 @@ const Body = () => {
 		setSelectedFigure(figure);
 	};
 
-
-  return (
-    <div className="body-container">
-      {selectedFigure ? (
-        <div className="selected-card-container">
-          <Card figure={selectedFigure} />
-          <p>{selectedFigure.chosenMood}</p>
-          <button onClick={() => setSelectedFigure(null)}>Merci, je m'accroche</button>
-        </div>
-      ) : (
-        figures.map((figure) => (
-          <div key={figure.id}>
-            <Card figure={figure} onClick={() => handleFigureClick(figure)} />
-          </div>
-        ))
-      )}
-    </div>
-  );
+	return (
+		<div className="body-container">
+			{selectedFigure ? (
+				<div className="selected-card-container">
+					<Card figure={selectedFigure} />
+					<p>{selectedFigure.chosenMood}</p>
+					<button type="button" onClick={() => setSelectedFigure(null)}>
+						Merci, je m'accroche
+					</button>
+				</div>
+			) : (
+				figures.map((figure) => (
+					<div key={figure.id}>
+						<Card figure={figure} onClick={() => handleFigureClick(figure)} />
+					</div>
+				))
+			)}
+		</div>
+	);
 };
 
 export default Body;
