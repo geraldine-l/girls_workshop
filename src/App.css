@@ -19,15 +19,15 @@
 .body-container {
   background-color: rgba(25, 25, 25, 0.116);
   border-radius: 8px;
-  height: 800px;
-  width: 100%;
+  width: 1200px;
   border: 1px solid rgba(255, 255, 255, 0.423);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
+  margin: 5px;
 }
 
 .figure-card img {
@@ -35,15 +35,34 @@
   border-radius: 10px;
 }
 
-.figure-card figcaption {
+/* .figure-card figcaption {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-weight: 600;
-}
+} */
 
 .card-container {
-  background-color: white;
   border-radius: 8px;
   padding: 10px;
   padding-bottom: 50px;
+  gap: 30px;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.253);
+  width: 300px;
+  height: 500px;
+  margin: 5px;
+}
+
+.card-container p {
+  color: rgb(255, 255, 255);
+  font-size: 0.8rem;
+}
+
+.selected-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
 }

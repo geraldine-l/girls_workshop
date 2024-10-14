@@ -67,14 +67,17 @@ const Body = () => {
   return (
     <div className="body-container">
       {selectedFigure ? (
-        <div className="card-container">
+        <div className="selected-card-container">
           <Card figure={selectedFigure} />
-          <button onClick={() => setSelectedFigure(null)}>Close</button>
+          <p>{selectedFigure.chosenMood}</p>
+          <button onClick={() => setSelectedFigure(null)}>Merci, je m'accroche</button>
         </div>
       ) : (
-figures.map((figure) => (
-  <Card key={figure.id} figure={figure} onClick={() => handleFigureClick(figure)} />
-))
+        figures.map((figure) => (
+          <div key={figure.id}>
+            <Card figure={figure} onClick={() => handleFigureClick(figure)} />
+          </div>
+        ))
       )}
     </div>
   );
