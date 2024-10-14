@@ -39,7 +39,7 @@ h2 {
   font-family: "Nosifer";
   color: rgb(138, 20, 20);
   filter: drop-shadow(0 0 10px black);
-  font-size: 1.8rem;
+  /* font-size: 1.8rem; */
   margin: 0;
 }
 
