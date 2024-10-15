@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Card from "./Card";
 
 interface Figure {
@@ -88,12 +88,31 @@ const Body = () => {
 		setSelectedFigure(figure);
 	};
 
+  const PhraseMotAMot = ({ phrase }) => {
+    const [motsAffiches, setMotsAffiches] = useState('');
+    const [indexMot, setIndexMot] = useState(0);
+
+
+    useEffect(() => {
+      if (indexMot < phrase.length) {
+        const timer = setTimeout(() => {
+          setMotsAffiches(phrase.slice(0, indexMot + 1));
+          setIndexMot(indexMot + 1);
+        }, 30);
+        return () => clearTimeout(timer);
+      }
+    }, [indexMot, phrase]);
+    return <div>{motsAffiches}</div>;
+  };
+
 	return (
 		<div className="body-container">
 			{selectedFigure ? (
 				<div className="selected-card-container" style={selectedFigure?.isOkay ? { filter: `drop-shadow(0 0 0.75rem #DF6D14)` } : { filter: `drop-shadow(0 0 0.75rem #800080)` }}>
 					<Card figure={selectedFigure} />
-					<p>{selectedFigure.chosenMood}</p>
+          <div className="chosen-mood">
+					<PhraseMotAMot phrase={selectedFigure.chosenMood} />
+          </div>
 					<button type="button" onClick={() => setSelectedFigure(null)}>
 						{selectedFigure?.isOkay ? "Okay, je gère" : "Merci, je m'accroche"}
 					</button>
