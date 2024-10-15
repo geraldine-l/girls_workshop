@@ -91,7 +91,7 @@ const Body = () => {
 	return (
 		<div className="body-container">
 			{selectedFigure ? (
-				<div className="selected-card-container">
+				<div className="selected-card-container" style={selectedFigure?.isOkay ? { filter: `drop-shadow(0 0 0.75rem #DF6D14)` } : { filter: `drop-shadow(0 0 0.75rem #800080)` }}>
 					<Card figure={selectedFigure} />
 					<p>{selectedFigure.chosenMood}</p>
 					<button type="button" onClick={() => setSelectedFigure(null)}>
