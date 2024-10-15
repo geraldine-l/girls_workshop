@@ -5,12 +5,17 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #3a3a3a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("src/images/bats-gif.webp");
+  background-blend-mode: color-burn;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 1100px 1100px;
 }
 
 a {
@@ -24,15 +29,33 @@ a:hover {
 
 body {
   margin: 0;
+  margin-top: 5px;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-image: url("src/images/header_halloween_test.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h2 {
+  font-family: "Nosifer";
+  color: rgb(138, 20, 20);
+  filter: drop-shadow(0 0 10px black);
+  /* font-size: 1.8rem; */
+  margin: 0;
+}
+
+h3 {
+  font-family: "Noto Sans", sans-serif;
+  margin: 0;
 }
 
 button {
@@ -43,26 +66,15 @@ button {
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
+  color: lightgray;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #9d2929;
+  filter: drop-shadow(0 0 10px rgb(218, 0, 0));
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
